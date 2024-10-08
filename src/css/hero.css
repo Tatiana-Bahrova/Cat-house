@@ -1,0 +1,61 @@
+/*=========== MOBILE STYLE =================*/
+
+.hero-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.hero-link {
+  width: 100%;
+}
+.hero-list-li {
+  position: relative;
+}
+
+.hero-text-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(47, 47, 55, 0.4);
+  border-radius: 0 0 16px 16px;
+  width: 100%;
+  /* height: 84px; */
+}
+.hero-text {
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0;
+  color: #fcfcfc;
+}
+
+/*=========== TABLET STYLE =================*/
+
+@media only screen and (min-width: 768px) {
+  .hero-text-wrapper {
+    height: 104px;
+  }
+
+  .hero-text {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .hero-list {
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-list-li:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+}
+
+/*=========== DESKTOP STYLE =================*/
+
+@media only screen and (min-width: 1440px) {
+  .hero-text {
+    padding: 24px 48px;
+  }
+}

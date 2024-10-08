@@ -1,0 +1,154 @@
+/*========== MOBILE STYLE ==================*/
+.social-media-container {
+  display: grid;
+  gap: 96px;
+}
+
+.blog-list {
+  display: grid;
+  gap: 48px;
+}
+
+.blog-link {
+  display: grid;
+  gap: 20px;
+}
+
+.blog-link > picture,
+.blog-link > img {
+  height: auto;
+}
+
+.blog-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+  margin-bottom: 12px;
+}
+
+.blog-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+}
+
+.blog-img {
+  border-radius: 16px;
+  height: 170px;
+}
+
+.social-media-list {
+  display: grid;
+  gap: 24px 8px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.s-m-link {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.li-1 {
+  background: #d8def8;
+}
+.li-2 {
+  background: #fae8ea;
+}
+.li-3 {
+  background: #fffddc;
+}
+.li-4 {
+  background: #ffe8f1;
+}
+.li-5 {
+  background: #e9f9f8;
+}
+.li-6 {
+  background: #f2eef8;
+}
+
+.svg-wrapper {
+  fill: #2f2f37;
+  border: 1px solid #2f2f37;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.s-m-text {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #2f2f37;
+}
+
+.social-media-wrapper {
+  display: grid;
+  gap: 24px;
+}
+
+.video-wrapper {
+  display: grid;
+  gap: 24px;
+}
+.video-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: 0.02em;
+  color: #2c2c2c;
+}
+/*========== TABLET STYLE ==================*/
+
+@media only screen and (min-width: 768px) {
+  .blog-list {
+    gap: 36px;
+  }
+  .blog-title {
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .blog-link {
+    gap: 24px;
+    grid-template-columns: 264px 1fr;
+  }
+  .blog-img {
+    height: 156px;
+  }
+
+  .social-media-list {
+    gap: 24px;
+  }
+}
+/*========== DESKTOP STYLE ==================*/
+@media only screen and (min-width: 1440px) {
+  .social-media-container {
+    grid-template-areas:
+      'b b s'
+      'b b s'
+      'b b v'
+      'b b .';
+    gap: 60px 24px;
+  }
+
+  .blog-list {
+    grid-area: b;
+  }
+  .social-media-wrapper {
+    grid-area: s;
+  }
+  .video-wrapper {
+    grid-area: v;
+  }
+}
